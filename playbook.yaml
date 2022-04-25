@@ -1,6 +1,7 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     connection: local
-  - name: Print the gateway for each host when defined
+  tasks:
+  - name: Print debug message
     debug:
-      msg: "text to print"
+      msg: Hello, world!
