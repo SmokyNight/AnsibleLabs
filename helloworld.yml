@@ -1,7 +1,6 @@
-- name: This is a hello-world example
-hosts: all
+---
+- name: My playbook
+  hosts: all
   tasks:
-    - name: Create a file called '/tmp/testfile.txt' with the content 'hello world'.
-      copy:
-        content: hello worldn
-        dest: /tmp/testfile.txt
+     - name: Leaving a mark
+       command: "touch /tmp/ansible_was_here"
