@@ -2,9 +2,7 @@
     hosts: localhost
     connection: local 
     tasks:
-
     - name: "I am only test file"
       shell: "ls -la"
       
-    - debug:
-    msg: "Hello world!"
+    - debug: msg: "Hello world!"
