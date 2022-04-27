@@ -7,10 +7,12 @@
   - name: Print debug message
     debug:
       msg: "{{text}}"
+  when: {{class}} == "all"
   - name: Creates directory
     file:
       path: /tmp/sahlovs/gradle
       state: directory
+  when: {{class}} == "back-end-servers"
   - name: download sources
     get_url: url=https://services.gradle.org/distributions/{{gradle_version}} dest=/tmp/sahlovs/gradle/{{gradle_version}}
   - name: Extract foo.tgz into /var/lib/foo
@@ -18,6 +20,8 @@
       src: /tmp/sahlovs/gradle/{{gradle_version}}
       dest: /tmp/sahlovs/gradle
       remote_src: yes
+  when: {{class}} == "back-end-servers"
   - name: Print gradle_version
     debug:
       msg: "{{gradle_version}}"
+  when: {{class}} == "back-end-servers"
