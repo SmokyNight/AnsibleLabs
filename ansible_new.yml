@@ -20,4 +20,4 @@
       remote_src: yes
   - name: Print gradle_version
     debug:
-      msg: {{gradle_version}}
+      msg: "{{gradle_version}}"
