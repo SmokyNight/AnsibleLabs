@@ -13,7 +13,7 @@
       state: directory
   - name: download sources
     get_url: url=https://services.gradle.org/distributions/{{gradle_version}} dest=/tmp/sahlovs/gradle/{{gradle_version}}
- - name: Extract foo.tgz into /var/lib/foo
+  - name: Extract foo.tgz into /var/lib/foo
     unarchive:
       src: /tmp/sahlovs/gradle/{{gradle_version}}
       dest: /tmp/sahlovs/gradle
