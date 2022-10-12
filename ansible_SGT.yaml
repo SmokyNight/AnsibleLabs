@@ -1,6 +1,4 @@
-# This playbook prints a simple debug message
 - name: Echo 
   hosts: localhost
   connection: local
-
   tasks:
