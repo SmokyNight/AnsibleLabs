@@ -1,6 +1,9 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     connection: local
-    - name: Print debug message
+    
+   tasks:
+  - name: Print debug message
     debug:
-      msg: "This is my playbook"
+      msg: "Spider fly"
+
