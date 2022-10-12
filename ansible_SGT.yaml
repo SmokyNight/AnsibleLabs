@@ -1,8 +1,10 @@
-- name: Echo 
-  hosts: localhost
+---
+
+- name: Echo
   connection: local
+  hosts: localhost
   tasks:
-  
-     - name: Print text
-     debug:
-     msg: "I like pie"
+
+    - name: Print text
+      debug:
+        msg: "I like pie"
