@@ -1,4 +1,9 @@
 # This playbook prints a simple debug message
 - name: Echo 
   hosts: localhost
-  connection: local 
+  connection: local
+     
+ tasks:
+  - name: Print debug message
+    debug:
+      msg: "Spider fly"
