@@ -1,3 +1,4 @@
-- name: "This is test playbook"     
-hosts: localhost     
-connection: local 
+# This playbook prints a simple debug message
+- name: Echo 
+  hosts: localhost
+  connection: local 
