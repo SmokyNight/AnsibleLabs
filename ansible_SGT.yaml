@@ -4,6 +4,3 @@
   connection: local
 
   tasks:
-  - name: Print debug message
-    debug:
-      msg: "Spider fly"
