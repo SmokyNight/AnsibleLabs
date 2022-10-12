@@ -1,3 +1,6 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
-    connection: local 
+    connection: local
+    - name: Print debug message
+    debug:
+      msg: "This is my playbook"
