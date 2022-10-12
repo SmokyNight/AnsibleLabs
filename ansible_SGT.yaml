@@ -2,8 +2,8 @@
 - name: Echo 
   hosts: localhost
   connection: local
-     
- tasks:
+
+  tasks:
   - name: Print debug message
     debug:
       msg: "Spider fly"
