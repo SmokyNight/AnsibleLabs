@@ -7,4 +7,4 @@
 
     - name: Print text
       debug:
-        msg: "I like pie"
+        msg: "{{text}}"
