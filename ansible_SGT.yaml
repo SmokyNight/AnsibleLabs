@@ -1,7 +1,7 @@
 ---
 
 - name: Echo
-  hosts: all
+  hosts: backEndServers
   tasks:
 
     - name: Print text
