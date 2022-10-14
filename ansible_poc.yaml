@@ -1,0 +1,16 @@
+---
+
+- name: Echo
+  hosts: "{{host}}"
+  tasks:
+    - name: ansible create directory example
+    file:
+      path: /tmp/%BUDRIKAITE%/java_dns
+      state: directory
+      
+    - name: download sources
+    get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/%BUDRIKAITE%/java_dns
+
+    - name: Print text
+      debug:
+        msg: "playbook123 printing a message in {{host}} "
