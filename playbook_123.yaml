@@ -1,8 +1,9 @@
-  - name: "Playing with Ansible and Git"
-    hosts: localhost
-    connection: local
-    
-   tasks:
-  - name: Print debug message
-    debug:
-      msg: "Spider fly"
+---
+
+- name: Echo
+  hosts: 44.202.132.152
+  tasks:
+
+    - name: Print text
+      debug:
+        msg: "{{text}}"
