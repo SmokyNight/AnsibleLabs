@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SmokyNight/spring-petclinic.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/SmokyNight/AnsibleLabs.git']]])
             }
         }
         stage('Build') {
             steps {
-                sh './gradlew build'
+                sh 'sudo ansible-playbook ansible_poc.yaml --extra-vars "text=123 host=${host}" --user ec2-user --key-file /home/ec2-user/.ssh/id_rsa'
             }
         }
         
