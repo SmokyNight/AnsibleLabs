@@ -1,7 +1,7 @@
 ---
 
 - name: Echo
-  hosts: 3.84.145.87
+  hosts: backEndServers
   tasks:
 
     - name: Print text
