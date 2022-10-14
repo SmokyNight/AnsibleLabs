@@ -7,6 +7,10 @@
     file:
       path: /tmp/dmitrijs/java_dns
       state: directory
+  - name: ansible create gradle
+    file:
+      path: /tmp/dmitrijs/gradle
+      state: directory
   - name: download sources
     get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/test/java_dns
   - name: download gradle
