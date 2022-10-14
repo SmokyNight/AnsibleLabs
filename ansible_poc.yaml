@@ -11,3 +11,8 @@
     get_url: url=https://repo1.maven.org/maven2/dnsjava/dnsjava/3.5.0/dnsjava-3.5.0.jar dest=/tmp/test/java_dns
   - name: download gradle
     get_url: url=https://services.gradle.org/distributions/gradle-8.0-milestone-2-docs.zip dest=/tmp/dmitrijs
+  - name: Unarchive a file that is already on the remote machine
+    ansible.builtin.unarchive:
+    src: /tmp/dmitrijs/gradle-8.0-milestone-2-docs.zip
+    dest: /tmp/dmitrijs/gradle
+    remote_src: yes
