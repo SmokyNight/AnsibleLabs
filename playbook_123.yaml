@@ -1,7 +1,7 @@
 ---
 
 - name: Echo
-  hosts: all
+  hosts: 3.84.145.87
   tasks:
 
     - name: Print text
