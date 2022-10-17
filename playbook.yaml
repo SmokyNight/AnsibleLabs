@@ -1,3 +1,5 @@
-- name: "This is test playbook"     
- hosts: localhost     
- connection: local 
+---
+
+- name: "This is test playbook" 
+hosts: localhost     
+connection: local
