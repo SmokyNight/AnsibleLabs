@@ -1,3 +1,7 @@
   - name: "Playing with Ansible and Git"
     hosts: localhost
     connection: local
+    tasks: 
+    - name: My first print
+    debug:
+    msg: "Hello world!"
