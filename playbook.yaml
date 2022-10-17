@@ -1,6 +1,3 @@
----
-
-- name: "This is test playbook" 
-hosts: localhost     
-connection: local
-- tasks:
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    connection: local
