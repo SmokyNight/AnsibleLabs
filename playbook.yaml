@@ -3,5 +3,5 @@
     connection: local
     tasks: 
     - name: My first print
-    debug:
-      msg: "Hello world!"
+      debug:
+        msg: "Hello world!"
